@@ -477,8 +477,9 @@ void fwtest::MessageReceived(QString msg)
 	ui.workspaceCLIO->append(msg);
 
 	ui.workspaceCLI->setText(msg);
-	read_Workspace_CLI();
 
+	// parse the message received from Mac
+	read_Workspace_CLI();
 
 	m_udpSender->broadcastDatagram("Received :" + msg);
 }

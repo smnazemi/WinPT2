@@ -16,8 +16,7 @@ UDPReceiver::UDPReceiver(IUDPReceiverListener* listener, QWidget *parent)
 	udpSocket = new QUdpSocket(this);
 	udpSocket->bind(7777, QUdpSocket::ShareAddress);
 
-	connect(udpSocket, SIGNAL(readyRead()),
-	this, SLOT(processPendingDatagrams()));
+	connect(udpSocket, SIGNAL(readyRead()),	this, SLOT(processPendingDatagrams()));
 	connect(quitButton, SIGNAL(clicked()), this, SLOT(close()));
 
 
