@@ -1,0 +1,1095 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="PTMP">
+      <UniqueIdentifier>{c0cdba40-347c-4cbd-8bfc-2ba269e3fc2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPC">
+      <UniqueIdentifier>{ee23f40d-fa90-4cf1-9dcb-605d39d22dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="support">
+      <UniqueIdentifier>{01cf78e6-34ea-44ac-a1a3-daceb376ba01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPCFiles">
+      <UniqueIdentifier>{8acaabd1-192e-4bd7-aa4e-d495877bb888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{3262c924-7050-4c18-98f1-54cecdddf1df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fwtest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CPtmpConnection.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CPtmpConnection.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EventHandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EventHandler.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fwtest.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fwtest.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_IPCClientEngine.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_IPCClientEngine.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CAuthChallengeMsg.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CAuthReqMsg.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CAuthResponseMsg.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CAuthStatusMsg.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CDataMsg.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CDisconnectMsg.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CKeepAliveMsg.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CNegoMsg.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CNegoMsgParameter.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CPtmpBuffer.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CPtmpConection.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CPtmpMsg.cpp">
+      <Filter>PTMP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ipc\CIpcCallMsg.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ipc\CIpcEventMsg.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ipc\CIpcEvntSubsMsg.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ipc\CIpcMsg.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ipc\CIpcRetErrMsg.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ipc\CIpcRetMsg.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Ipc\CIpcRetValMsg.cpp">
+      <Filter>IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\support\CIpAddress.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\support\CIpv6Address.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\support\CMacAddress.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\support\encryptUtil.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\support\md5.c">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\support\stringUtil.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Acl.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\AclProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\ActiveDialog.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\ActivityFile.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\ActivityWizard.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\AdministrativeDialog.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Antenna.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\AppWindow.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\ArpProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Cable.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\CdpNeighborTable.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\CdpProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\ChapProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\CiscoDevice.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Cloud.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\CloudPotsPort.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\CloudSerialPort.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\CommandLog.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\CommandLogEntry.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\CommonToolbar.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\ComponentItem.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Device.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\DeviceDialog.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\DhcpClientProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\DhcpPool.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\DhcpServerProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\DialogManager.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Directory.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\DnsClient.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\DnsServerProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\EigrpMainProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\EigrpNeighborTable.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\EigrpProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\File.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\FileManager.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\FileSystem.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\FrameRelayProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\FRSubInterface.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\GeoView.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\HostIp.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\HostPort.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\HttpServer.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\IcmpProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\InfoDialog.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\InstructionDlg.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\IPC.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\IpcManager.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Link.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\LogicalToolbar.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\LogicalWorkspace.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\LoopbackManager.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\MacSwitch.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\MacTable.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Menu.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\MenuBar.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\MenuItem.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\MultiUserManager.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\NatProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Network.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\NetworkComponentBox.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\NetworkFile.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Options.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\OspfArea.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\OspfMainProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\OspfNeighborTable.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\OspfProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\PaletteDialog.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\PAPProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\PDUListWindow.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\PhysicalLocationDialog.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\PhysicalToolbar.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\PingProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\PLSwitch.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Port.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\PortKeepAliveProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\PortSecurity.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\PppProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Process.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\RackView.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\RealtimeToolbar.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\RemoteNetwork.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\RipProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Router.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\RouterPort.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\RoutingProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\RoutingProtocol.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\RSSwitch.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\SimulationPanel.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\SimulationToolbar.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\StpMainProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\StpProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\SwitchPort.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\TelnetClientProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\TelnetServerProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\TerminalLine.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\TftpServer.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\TraceRouteProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\TreeNode.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\UserCreatedPDU.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Vlan.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\VlanManager.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\VtpProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\WEPProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\WirelessClientProcess.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\WirelessCommon.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\WirelessRouter.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IPCFiles\Workspace.cpp">
+      <Filter>IPCFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\callManager.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\EventHandler.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\IpcBase.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\IPCClientEngine.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\IPCFrameWork.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_fwtest.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CAuthChallengeMsg.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CAuthReqMsg.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CAuthResponseMsg.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CAuthStatusMsg.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CDataMsg.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CDisconnectMsg.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CKeepAliveMsg.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CNegoMsg.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CNegoMsgParameter.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CPtmpBuffer.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ptmp\CPtmpMsg.h">
+      <Filter>PTMP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ipc\CIpcCallMsg.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ipc\CIpcData.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ipc\CIpcEventMsg.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ipc\CIpcEvntSubsMsg.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ipc\CIpcMsg.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ipc\CIpcRetErrMsg.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ipc\CIpcRetMsg.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ipc\CIpcRetValMsg.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ipc\CReturnErrMsg.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Ipc\CReturnValueMsg.h">
+      <Filter>IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\support\CIpAddress.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\support\CIpv6Address.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\support\CMacAddress.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\support\encryptUtil.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\support\engine.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\support\md5.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\support\stringConvert.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\support\stringUtil.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Acl.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\AclProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\AclStatement.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\ActiveDialog.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\ActivityFile.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\ActivityWizard.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\AdministrativeDialog.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Antenna.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\AppWindow.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\ArpProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Cable.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CdpNeighbor.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CdpNeighborTable.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CdpProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\ChapProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CiscoDevice.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Cloud.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CloudPotsPort.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CloudSerialPort.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CloudSubLink.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CommandHistory.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CommandLog.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CommandLogEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\CommonToolbar.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\ComponentItem.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Device.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\DeviceDialog.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\DhcpClientProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\DhcpPool.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\DhcpPoolLease.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\DhcpServerProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\DialogManager.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Directory.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\DlciTable.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\DnsClient.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\DnsServerProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\EigrpExternal.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\EigrpInternal.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\EigrpMainProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\EigrpNeighbor.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\EigrpNeighborTable.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\EigrpProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\EigrpRoutingEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\EigrpSummaryAddress.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\EigrpTopologyEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\EigrpTopologyTable.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\ExtNatEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\ExtNatv6Entry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\File.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\FileManager.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\FileSystem.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\FrameRelayMapEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\FrameRelayProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\FRSubInterface.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\GeoView.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\HostIp.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\HostPort.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\HttpServer.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\IcmpProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\InfoDialog.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\InstructionDlg.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\IPC.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\IpcManager.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Ipv6AddressConfig.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Link.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\LogicalToolbar.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\LogicalWorkspace.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\LoopbackManager.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\MacEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\MacSwitch.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\MacTable.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Menu.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\MenuBar.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\MenuItem.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\MultiUserManager.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\NatConfigEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\NatEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\NatList.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\NatListInterface.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\NatListPool.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\NatPool.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\NatProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\NatTable.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Natv6Entry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Natv6List.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Natv6ListInterface.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Natv6ListPool.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Natv6Pool.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Natv6Table.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Network.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\NetworkComponentBox.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\NetworkFile.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Options.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfArea.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfAreaNetwork.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfAsExternalLSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfDatabase.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfLSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfLSAHeader.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfMainProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfNeighbor.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfNeighborTable.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfNetworkLSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfRouterLink.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfRouterLSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfRoutingEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfSummaryLSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\OspfType7LSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\PaletteDialog.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\PAPProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\PDUListWindow.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\PhysicalLocationDialog.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\PhysicalToolbar.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\PingProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\PLSwitch.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Port.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\PortKeepAliveProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\PortSecurity.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\PppProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Process.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RackView.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RealtimeToolbar.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RemoteNetwork.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RipProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RipRoutingEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Router.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RouterPort.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RoutingEntry.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RoutingNetwork.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RoutingProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RoutingProtocol.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RoutingTable.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\RSSwitch.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\SimulationPanel.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\SimulationToolbar.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\StaticMac.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\StaticRoute.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\StpMainProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\StpProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\SwitchPort.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TelnetClientProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TelnetServerProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TerminalLine.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TftpServer.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TimedAsExternalLSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TimedNetworkLSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TimedRouterLSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TimedSummaryLSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TimedType7LSA.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TraceRouteProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\TreeNode.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\UserCreatedPDU.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Vlan.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\VlanManager.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\VtpProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\WEPProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\WirelessClientProcess.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\WirelessCommon.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\WirelessProfile.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\WirelessRouter.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IPCFiles\Workspace.h">
+      <Filter>IPCFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\callManager.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\EIPCCallMode.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\IpcBase.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\IPCFrameWork.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="fwtest.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fwtest.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fwtest.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Ptmp\CPtmpConnection.h">
+      <Filter>PTMP</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\framework\EventHandler.h">
+      <Filter>Framework</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\framework\IPCClientEngine.h">
+      <Filter>Framework</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

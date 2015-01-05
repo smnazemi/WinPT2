@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FC37E939-A87B-4CA7-B89C-9D1F7FFCE1CC}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;QtGui4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\Qt3Support;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_QT3SUPPORT_LIB;QT3_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtGuid4.lib;QtNetworkd4.lib;Qt3Supportd4.lib;comdlg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="fwtest.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CPtmpConnection.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CPtmpConnection.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EventHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EventHandler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fwtest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fwtest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_IPCClientEngine.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_IPCClientEngine.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Ptmp\CAuthChallengeMsg.cpp" />
+    <ClCompile Include="..\Ptmp\CAuthReqMsg.cpp" />
+    <ClCompile Include="..\Ptmp\CAuthResponseMsg.cpp" />
+    <ClCompile Include="..\Ptmp\CAuthStatusMsg.cpp" />
+    <ClCompile Include="..\Ptmp\CDataMsg.cpp" />
+    <ClCompile Include="..\Ptmp\CDisconnectMsg.cpp" />
+    <ClCompile Include="..\Ptmp\CKeepAliveMsg.cpp" />
+    <ClCompile Include="..\Ptmp\CNegoMsg.cpp" />
+    <ClCompile Include="..\Ptmp\CNegoMsgParameter.cpp" />
+    <ClCompile Include="..\Ptmp\CPtmpBuffer.cpp" />
+    <ClCompile Include="..\Ptmp\CPtmpConection.cpp" />
+    <ClCompile Include="..\Ptmp\CPtmpMsg.cpp" />
+    <ClCompile Include="..\Ipc\CIpcCallMsg.cpp" />
+    <ClCompile Include="..\Ipc\CIpcEventMsg.cpp" />
+    <ClCompile Include="..\Ipc\CIpcEvntSubsMsg.cpp" />
+    <ClCompile Include="..\Ipc\CIpcMsg.cpp" />
+    <ClCompile Include="..\Ipc\CIpcRetErrMsg.cpp" />
+    <ClCompile Include="..\Ipc\CIpcRetMsg.cpp" />
+    <ClCompile Include="..\Ipc\CIpcRetValMsg.cpp" />
+    <ClCompile Include="..\support\CIpAddress.cpp" />
+    <ClCompile Include="..\support\CIpv6Address.cpp" />
+    <ClCompile Include="..\support\CMacAddress.cpp" />
+    <ClCompile Include="..\support\encryptUtil.cpp" />
+    <ClCompile Include="..\support\md5.c" />
+    <ClCompile Include="..\support\stringUtil.cpp" />
+    <ClCompile Include="..\IPCFiles\Acl.cpp" />
+    <ClCompile Include="..\IPCFiles\AclProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\ActiveDialog.cpp" />
+    <ClCompile Include="..\IPCFiles\ActivityFile.cpp" />
+    <ClCompile Include="..\IPCFiles\ActivityWizard.cpp" />
+    <ClCompile Include="..\IPCFiles\AdministrativeDialog.cpp" />
+    <ClCompile Include="..\IPCFiles\Antenna.cpp" />
+    <ClCompile Include="..\IPCFiles\AppWindow.cpp" />
+    <ClCompile Include="..\IPCFiles\ArpProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\Cable.cpp" />
+    <ClCompile Include="..\IPCFiles\CdpNeighborTable.cpp" />
+    <ClCompile Include="..\IPCFiles\CdpProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\ChapProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\CiscoDevice.cpp" />
+    <ClCompile Include="..\IPCFiles\Cloud.cpp" />
+    <ClCompile Include="..\IPCFiles\CloudPotsPort.cpp" />
+    <ClCompile Include="..\IPCFiles\CloudSerialPort.cpp" />
+    <ClCompile Include="..\IPCFiles\CommandLog.cpp" />
+    <ClCompile Include="..\IPCFiles\CommandLogEntry.cpp" />
+    <ClCompile Include="..\IPCFiles\CommonToolbar.cpp" />
+    <ClCompile Include="..\IPCFiles\ComponentItem.cpp" />
+    <ClCompile Include="..\IPCFiles\Device.cpp" />
+    <ClCompile Include="..\IPCFiles\DeviceDialog.cpp" />
+    <ClCompile Include="..\IPCFiles\DhcpClientProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\DhcpPool.cpp" />
+    <ClCompile Include="..\IPCFiles\DhcpServerProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\DialogManager.cpp" />
+    <ClCompile Include="..\IPCFiles\Directory.cpp" />
+    <ClCompile Include="..\IPCFiles\DnsClient.cpp" />
+    <ClCompile Include="..\IPCFiles\DnsServerProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\EigrpMainProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\EigrpNeighborTable.cpp" />
+    <ClCompile Include="..\IPCFiles\EigrpProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\File.cpp" />
+    <ClCompile Include="..\IPCFiles\FileManager.cpp" />
+    <ClCompile Include="..\IPCFiles\FileSystem.cpp" />
+    <ClCompile Include="..\IPCFiles\FrameRelayProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\FRSubInterface.cpp" />
+    <ClCompile Include="..\IPCFiles\GeoView.cpp" />
+    <ClCompile Include="..\IPCFiles\HostIp.cpp" />
+    <ClCompile Include="..\IPCFiles\HostPort.cpp" />
+    <ClCompile Include="..\IPCFiles\HttpServer.cpp" />
+    <ClCompile Include="..\IPCFiles\IcmpProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\InfoDialog.cpp" />
+    <ClCompile Include="..\IPCFiles\InstructionDlg.cpp" />
+    <ClCompile Include="..\IPCFiles\IPC.cpp" />
+    <ClCompile Include="..\IPCFiles\IpcManager.cpp" />
+    <ClCompile Include="..\IPCFiles\Link.cpp" />
+    <ClCompile Include="..\IPCFiles\LogicalToolbar.cpp" />
+    <ClCompile Include="..\IPCFiles\LogicalWorkspace.cpp" />
+    <ClCompile Include="..\IPCFiles\LoopbackManager.cpp" />
+    <ClCompile Include="..\IPCFiles\MacSwitch.cpp" />
+    <ClCompile Include="..\IPCFiles\MacTable.cpp" />
+    <ClCompile Include="..\IPCFiles\Menu.cpp" />
+    <ClCompile Include="..\IPCFiles\MenuBar.cpp" />
+    <ClCompile Include="..\IPCFiles\MenuItem.cpp" />
+    <ClCompile Include="..\IPCFiles\MultiUserManager.cpp" />
+    <ClCompile Include="..\IPCFiles\NatProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\Network.cpp" />
+    <ClCompile Include="..\IPCFiles\NetworkComponentBox.cpp" />
+    <ClCompile Include="..\IPCFiles\NetworkFile.cpp" />
+    <ClCompile Include="..\IPCFiles\Options.cpp" />
+    <ClCompile Include="..\IPCFiles\OspfArea.cpp" />
+    <ClCompile Include="..\IPCFiles\OspfMainProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\OspfNeighborTable.cpp" />
+    <ClCompile Include="..\IPCFiles\OspfProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\PaletteDialog.cpp" />
+    <ClCompile Include="..\IPCFiles\PAPProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\PDUListWindow.cpp" />
+    <ClCompile Include="..\IPCFiles\PhysicalLocationDialog.cpp" />
+    <ClCompile Include="..\IPCFiles\PhysicalToolbar.cpp" />
+    <ClCompile Include="..\IPCFiles\PingProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\PLSwitch.cpp" />
+    <ClCompile Include="..\IPCFiles\Port.cpp" />
+    <ClCompile Include="..\IPCFiles\PortKeepAliveProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\PortSecurity.cpp" />
+    <ClCompile Include="..\IPCFiles\PppProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\Process.cpp" />
+    <ClCompile Include="..\IPCFiles\RackView.cpp" />
+    <ClCompile Include="..\IPCFiles\RealtimeToolbar.cpp" />
+    <ClCompile Include="..\IPCFiles\RemoteNetwork.cpp" />
+    <ClCompile Include="..\IPCFiles\RipProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\Router.cpp" />
+    <ClCompile Include="..\IPCFiles\RouterPort.cpp" />
+    <ClCompile Include="..\IPCFiles\RoutingProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\RoutingProtocol.cpp" />
+    <ClCompile Include="..\IPCFiles\RSSwitch.cpp" />
+    <ClCompile Include="..\IPCFiles\SimulationPanel.cpp" />
+    <ClCompile Include="..\IPCFiles\SimulationToolbar.cpp" />
+    <ClCompile Include="..\IPCFiles\StpMainProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\StpProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\SwitchPort.cpp" />
+    <ClCompile Include="..\IPCFiles\TelnetClientProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\TelnetServerProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\TerminalLine.cpp" />
+    <ClCompile Include="..\IPCFiles\TftpServer.cpp" />
+    <ClCompile Include="..\IPCFiles\TraceRouteProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\TreeNode.cpp" />
+    <ClCompile Include="..\IPCFiles\UserCreatedPDU.cpp" />
+    <ClCompile Include="..\IPCFiles\Vlan.cpp" />
+    <ClCompile Include="..\IPCFiles\VlanManager.cpp" />
+    <ClCompile Include="..\IPCFiles\VtpProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\WEPProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\WirelessClientProcess.cpp" />
+    <ClCompile Include="..\IPCFiles\WirelessCommon.cpp" />
+    <ClCompile Include="..\IPCFiles\WirelessRouter.cpp" />
+    <ClCompile Include="..\IPCFiles\Workspace.cpp" />
+    <ClCompile Include="..\framework\callManager.cpp" />
+    <ClCompile Include="..\framework\EventHandler.cpp" />
+    <ClCompile Include="..\framework\IpcBase.cpp" />
+    <ClCompile Include="..\framework\IPCClientEngine.cpp" />
+    <ClCompile Include="..\framework\IPCFrameWork.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="fwtest.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing fwtest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -I".\GeneratedFiles" -I"$(QTDIR)\include" -I".\GeneratedFiles\$(Configuration)" -I"." -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtNetwork" -I"$(QTDIR)\include\Qt3Support" ".\fwtest.h" -o ".\GeneratedFiles\$(Configuration)\moc_fwtest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\fwtest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_fwtest.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing fwtest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -I".\GeneratedFiles" -I"$(QTDIR)\include" -I".\GeneratedFiles\$(Configuration)" -I"." -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" ".\fwtest.h" -o ".\GeneratedFiles\$(Configuration)\moc_fwtest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\fwtest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_fwtest.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_fwtest.h" />
+    <ClInclude Include="..\Ptmp\CAuthChallengeMsg.h" />
+    <ClInclude Include="..\Ptmp\CAuthReqMsg.h" />
+    <ClInclude Include="..\Ptmp\CAuthResponseMsg.h" />
+    <ClInclude Include="..\Ptmp\CAuthStatusMsg.h" />
+    <ClInclude Include="..\Ptmp\CDataMsg.h" />
+    <ClInclude Include="..\Ptmp\CDisconnectMsg.h" />
+    <ClInclude Include="..\Ptmp\CKeepAliveMsg.h" />
+    <ClInclude Include="..\Ptmp\CNegoMsg.h" />
+    <ClInclude Include="..\Ptmp\CNegoMsgParameter.h" />
+    <ClInclude Include="..\Ptmp\CPtmpBuffer.h" />
+    <CustomBuild Include="..\Ptmp\CPtmpConnection.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CPtmpConnection.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -I".\GeneratedFiles" -I"$(QTDIR)\include" -I".\GeneratedFiles\$(Configuration)" -I"." -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtNetwork" -I"$(QTDIR)\include\Qt3Support" "..\Ptmp\CPtmpConnection.h" -o ".\GeneratedFiles\$(Configuration)\moc_CPtmpConnection.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\Ptmp\CPtmpConnection.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_CPtmpConnection.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CPtmpConnection.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -I".\GeneratedFiles" -I"$(QTDIR)\include" -I".\GeneratedFiles\$(Configuration)" -I"." -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" "..\Ptmp\CPtmpConnection.h" -o ".\GeneratedFiles\$(Configuration)\moc_CPtmpConnection.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\Ptmp\CPtmpConnection.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_CPtmpConnection.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\Ptmp\CPtmpMsg.h" />
+    <ClInclude Include="..\Ipc\CIpcCallMsg.h" />
+    <ClInclude Include="..\Ipc\CIpcData.h" />
+    <ClInclude Include="..\Ipc\CIpcEventMsg.h" />
+    <ClInclude Include="..\Ipc\CIpcEvntSubsMsg.h" />
+    <ClInclude Include="..\Ipc\CIpcMsg.h" />
+    <ClInclude Include="..\Ipc\CIpcRetErrMsg.h" />
+    <ClInclude Include="..\Ipc\CIpcRetMsg.h" />
+    <ClInclude Include="..\Ipc\CIpcRetValMsg.h" />
+    <ClInclude Include="..\Ipc\CReturnErrMsg.h" />
+    <ClInclude Include="..\Ipc\CReturnValueMsg.h" />
+    <ClInclude Include="..\support\CIpAddress.h" />
+    <ClInclude Include="..\support\CIpv6Address.h" />
+    <ClInclude Include="..\support\CMacAddress.h" />
+    <ClInclude Include="..\support\encryptUtil.h" />
+    <ClInclude Include="..\support\engine.h" />
+    <ClInclude Include="..\support\md5.h" />
+    <ClInclude Include="..\support\stringConvert.h" />
+    <ClInclude Include="..\support\stringUtil.h" />
+    <ClInclude Include="..\IPCFiles\Acl.h" />
+    <ClInclude Include="..\IPCFiles\AclProcess.h" />
+    <ClInclude Include="..\IPCFiles\AclStatement.h" />
+    <ClInclude Include="..\IPCFiles\ActiveDialog.h" />
+    <ClInclude Include="..\IPCFiles\ActivityFile.h" />
+    <ClInclude Include="..\IPCFiles\ActivityWizard.h" />
+    <ClInclude Include="..\IPCFiles\AdministrativeDialog.h" />
+    <ClInclude Include="..\IPCFiles\Antenna.h" />
+    <ClInclude Include="..\IPCFiles\AppWindow.h" />
+    <ClInclude Include="..\IPCFiles\ArpProcess.h" />
+    <ClInclude Include="..\IPCFiles\Cable.h" />
+    <ClInclude Include="..\IPCFiles\CdpNeighbor.h" />
+    <ClInclude Include="..\IPCFiles\CdpNeighborTable.h" />
+    <ClInclude Include="..\IPCFiles\CdpProcess.h" />
+    <ClInclude Include="..\IPCFiles\ChapProcess.h" />
+    <ClInclude Include="..\IPCFiles\CiscoDevice.h" />
+    <ClInclude Include="..\IPCFiles\Cloud.h" />
+    <ClInclude Include="..\IPCFiles\CloudPotsPort.h" />
+    <ClInclude Include="..\IPCFiles\CloudSerialPort.h" />
+    <ClInclude Include="..\IPCFiles\CloudSubLink.h" />
+    <ClInclude Include="..\IPCFiles\CommandHistory.h" />
+    <ClInclude Include="..\IPCFiles\CommandLog.h" />
+    <ClInclude Include="..\IPCFiles\CommandLogEntry.h" />
+    <ClInclude Include="..\IPCFiles\CommonToolbar.h" />
+    <ClInclude Include="..\IPCFiles\ComponentItem.h" />
+    <ClInclude Include="..\IPCFiles\Device.h" />
+    <ClInclude Include="..\IPCFiles\DeviceDialog.h" />
+    <ClInclude Include="..\IPCFiles\DhcpClientProcess.h" />
+    <ClInclude Include="..\IPCFiles\DhcpPool.h" />
+    <ClInclude Include="..\IPCFiles\DhcpPoolLease.h" />
+    <ClInclude Include="..\IPCFiles\DhcpServerProcess.h" />
+    <ClInclude Include="..\IPCFiles\DialogManager.h" />
+    <ClInclude Include="..\IPCFiles\Directory.h" />
+    <ClInclude Include="..\IPCFiles\DlciTable.h" />
+    <ClInclude Include="..\IPCFiles\DnsClient.h" />
+    <ClInclude Include="..\IPCFiles\DnsServerProcess.h" />
+    <ClInclude Include="..\IPCFiles\EigrpExternal.h" />
+    <ClInclude Include="..\IPCFiles\EigrpInternal.h" />
+    <ClInclude Include="..\IPCFiles\EigrpMainProcess.h" />
+    <ClInclude Include="..\IPCFiles\EigrpNeighbor.h" />
+    <ClInclude Include="..\IPCFiles\EigrpNeighborTable.h" />
+    <ClInclude Include="..\IPCFiles\EigrpProcess.h" />
+    <ClInclude Include="..\IPCFiles\EigrpRoutingEntry.h" />
+    <ClInclude Include="..\IPCFiles\EigrpSummaryAddress.h" />
+    <ClInclude Include="..\IPCFiles\EigrpTopologyEntry.h" />
+    <ClInclude Include="..\IPCFiles\EigrpTopologyTable.h" />
+    <ClInclude Include="..\IPCFiles\ExtNatEntry.h" />
+    <ClInclude Include="..\IPCFiles\ExtNatv6Entry.h" />
+    <ClInclude Include="..\IPCFiles\File.h" />
+    <ClInclude Include="..\IPCFiles\FileManager.h" />
+    <ClInclude Include="..\IPCFiles\FileSystem.h" />
+    <ClInclude Include="..\IPCFiles\FrameRelayMapEntry.h" />
+    <ClInclude Include="..\IPCFiles\FrameRelayProcess.h" />
+    <ClInclude Include="..\IPCFiles\FRSubInterface.h" />
+    <ClInclude Include="..\IPCFiles\GeoView.h" />
+    <ClInclude Include="..\IPCFiles\HostIp.h" />
+    <ClInclude Include="..\IPCFiles\HostPort.h" />
+    <ClInclude Include="..\IPCFiles\HttpServer.h" />
+    <ClInclude Include="..\IPCFiles\IcmpProcess.h" />
+    <ClInclude Include="..\IPCFiles\InfoDialog.h" />
+    <ClInclude Include="..\IPCFiles\InstructionDlg.h" />
+    <ClInclude Include="..\IPCFiles\IPC.h" />
+    <ClInclude Include="..\IPCFiles\IpcManager.h" />
+    <ClInclude Include="..\IPCFiles\Ipv6AddressConfig.h" />
+    <ClInclude Include="..\IPCFiles\Link.h" />
+    <ClInclude Include="..\IPCFiles\LogicalToolbar.h" />
+    <ClInclude Include="..\IPCFiles\LogicalWorkspace.h" />
+    <ClInclude Include="..\IPCFiles\LoopbackManager.h" />
+    <ClInclude Include="..\IPCFiles\MacEntry.h" />
+    <ClInclude Include="..\IPCFiles\MacSwitch.h" />
+    <ClInclude Include="..\IPCFiles\MacTable.h" />
+    <ClInclude Include="..\IPCFiles\Menu.h" />
+    <ClInclude Include="..\IPCFiles\MenuBar.h" />
+    <ClInclude Include="..\IPCFiles\MenuItem.h" />
+    <ClInclude Include="..\IPCFiles\MultiUserManager.h" />
+    <ClInclude Include="..\IPCFiles\NatConfigEntry.h" />
+    <ClInclude Include="..\IPCFiles\NatEntry.h" />
+    <ClInclude Include="..\IPCFiles\NatList.h" />
+    <ClInclude Include="..\IPCFiles\NatListInterface.h" />
+    <ClInclude Include="..\IPCFiles\NatListPool.h" />
+    <ClInclude Include="..\IPCFiles\NatPool.h" />
+    <ClInclude Include="..\IPCFiles\NatProcess.h" />
+    <ClInclude Include="..\IPCFiles\NatTable.h" />
+    <ClInclude Include="..\IPCFiles\Natv6Entry.h" />
+    <ClInclude Include="..\IPCFiles\Natv6List.h" />
+    <ClInclude Include="..\IPCFiles\Natv6ListInterface.h" />
+    <ClInclude Include="..\IPCFiles\Natv6ListPool.h" />
+    <ClInclude Include="..\IPCFiles\Natv6Pool.h" />
+    <ClInclude Include="..\IPCFiles\Natv6Table.h" />
+    <ClInclude Include="..\IPCFiles\Network.h" />
+    <ClInclude Include="..\IPCFiles\NetworkComponentBox.h" />
+    <ClInclude Include="..\IPCFiles\NetworkFile.h" />
+    <ClInclude Include="..\IPCFiles\Options.h" />
+    <ClInclude Include="..\IPCFiles\OspfArea.h" />
+    <ClInclude Include="..\IPCFiles\OspfAreaNetwork.h" />
+    <ClInclude Include="..\IPCFiles\OspfAsExternalLSA.h" />
+    <ClInclude Include="..\IPCFiles\OspfDatabase.h" />
+    <ClInclude Include="..\IPCFiles\OspfLSA.h" />
+    <ClInclude Include="..\IPCFiles\OspfLSAHeader.h" />
+    <ClInclude Include="..\IPCFiles\OspfMainProcess.h" />
+    <ClInclude Include="..\IPCFiles\OspfNeighbor.h" />
+    <ClInclude Include="..\IPCFiles\OspfNeighborTable.h" />
+    <ClInclude Include="..\IPCFiles\OspfNetworkLSA.h" />
+    <ClInclude Include="..\IPCFiles\OspfProcess.h" />
+    <ClInclude Include="..\IPCFiles\OspfRouterLink.h" />
+    <ClInclude Include="..\IPCFiles\OspfRouterLSA.h" />
+    <ClInclude Include="..\IPCFiles\OspfRoutingEntry.h" />
+    <ClInclude Include="..\IPCFiles\OspfSummaryLSA.h" />
+    <ClInclude Include="..\IPCFiles\OspfType7LSA.h" />
+    <ClInclude Include="..\IPCFiles\PaletteDialog.h" />
+    <ClInclude Include="..\IPCFiles\PAPProcess.h" />
+    <ClInclude Include="..\IPCFiles\PDUListWindow.h" />
+    <ClInclude Include="..\IPCFiles\PhysicalLocationDialog.h" />
+    <ClInclude Include="..\IPCFiles\PhysicalToolbar.h" />
+    <ClInclude Include="..\IPCFiles\PingProcess.h" />
+    <ClInclude Include="..\IPCFiles\PLSwitch.h" />
+    <ClInclude Include="..\IPCFiles\Port.h" />
+    <ClInclude Include="..\IPCFiles\PortKeepAliveProcess.h" />
+    <ClInclude Include="..\IPCFiles\PortSecurity.h" />
+    <ClInclude Include="..\IPCFiles\PppProcess.h" />
+    <ClInclude Include="..\IPCFiles\Process.h" />
+    <ClInclude Include="..\IPCFiles\RackView.h" />
+    <ClInclude Include="..\IPCFiles\RealtimeToolbar.h" />
+    <ClInclude Include="..\IPCFiles\RemoteNetwork.h" />
+    <ClInclude Include="..\IPCFiles\RipProcess.h" />
+    <ClInclude Include="..\IPCFiles\RipRoutingEntry.h" />
+    <ClInclude Include="..\IPCFiles\Router.h" />
+    <ClInclude Include="..\IPCFiles\RouterPort.h" />
+    <ClInclude Include="..\IPCFiles\RoutingEntry.h" />
+    <ClInclude Include="..\IPCFiles\RoutingNetwork.h" />
+    <ClInclude Include="..\IPCFiles\RoutingProcess.h" />
+    <ClInclude Include="..\IPCFiles\RoutingProtocol.h" />
+    <ClInclude Include="..\IPCFiles\RoutingTable.h" />
+    <ClInclude Include="..\IPCFiles\RSSwitch.h" />
+    <ClInclude Include="..\IPCFiles\SimulationPanel.h" />
+    <ClInclude Include="..\IPCFiles\SimulationToolbar.h" />
+    <ClInclude Include="..\IPCFiles\StaticMac.h" />
+    <ClInclude Include="..\IPCFiles\StaticRoute.h" />
+    <ClInclude Include="..\IPCFiles\StpMainProcess.h" />
+    <ClInclude Include="..\IPCFiles\StpProcess.h" />
+    <ClInclude Include="..\IPCFiles\SwitchPort.h" />
+    <ClInclude Include="..\IPCFiles\TelnetClientProcess.h" />
+    <ClInclude Include="..\IPCFiles\TelnetServerProcess.h" />
+    <ClInclude Include="..\IPCFiles\TerminalLine.h" />
+    <ClInclude Include="..\IPCFiles\TftpServer.h" />
+    <ClInclude Include="..\IPCFiles\TimedAsExternalLSA.h" />
+    <ClInclude Include="..\IPCFiles\TimedNetworkLSA.h" />
+    <ClInclude Include="..\IPCFiles\TimedRouterLSA.h" />
+    <ClInclude Include="..\IPCFiles\TimedSummaryLSA.h" />
+    <ClInclude Include="..\IPCFiles\TimedType7LSA.h" />
+    <ClInclude Include="..\IPCFiles\TraceRouteProcess.h" />
+    <ClInclude Include="..\IPCFiles\TreeNode.h" />
+    <ClInclude Include="..\IPCFiles\UserCreatedPDU.h" />
+    <ClInclude Include="..\IPCFiles\Vlan.h" />
+    <ClInclude Include="..\IPCFiles\VlanManager.h" />
+    <ClInclude Include="..\IPCFiles\VtpProcess.h" />
+    <ClInclude Include="..\IPCFiles\WEPProcess.h" />
+    <ClInclude Include="..\IPCFiles\WirelessClientProcess.h" />
+    <ClInclude Include="..\IPCFiles\WirelessCommon.h" />
+    <ClInclude Include="..\IPCFiles\WirelessProfile.h" />
+    <ClInclude Include="..\IPCFiles\WirelessRouter.h" />
+    <ClInclude Include="..\IPCFiles\Workspace.h" />
+    <ClInclude Include="..\framework\callManager.h" />
+    <ClInclude Include="..\framework\EIPCCallMode.h" />
+    <CustomBuild Include="..\framework\EventHandler.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing EventHandler.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -I".\GeneratedFiles" -I"$(QTDIR)\include" -I".\GeneratedFiles\$(Configuration)" -I"." -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtNetwork" -I"$(QTDIR)\include\Qt3Support" "..\framework\EventHandler.h" -o ".\GeneratedFiles\$(Configuration)\moc_EventHandler.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\framework\EventHandler.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_EventHandler.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing EventHandler.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -I".\GeneratedFiles" -I"$(QTDIR)\include" -I".\GeneratedFiles\$(Configuration)" -I"." -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" "..\framework\EventHandler.h" -o ".\GeneratedFiles\$(Configuration)\moc_EventHandler.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\framework\EventHandler.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_EventHandler.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\framework\IpcBase.h" />
+    <CustomBuild Include="..\framework\IPCClientEngine.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing IPCClientEngine.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -I".\GeneratedFiles" -I"$(QTDIR)\include" -I".\GeneratedFiles\$(Configuration)" -I"." -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtNetwork" -I"$(QTDIR)\include\Qt3Support" "..\framework\IPCClientEngine.h" -o ".\GeneratedFiles\$(Configuration)\moc_IPCClientEngine.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;..\framework\IPCClientEngine.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_IPCClientEngine.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing IPCClientEngine.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -I".\GeneratedFiles" -I"$(QTDIR)\include" -I".\GeneratedFiles\$(Configuration)" -I"." -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" "..\framework\IPCClientEngine.h" -o ".\GeneratedFiles\$(Configuration)\moc_IPCClientEngine.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;..\framework\IPCClientEngine.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_IPCClientEngine.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\framework\IPCFrameWork.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="fwtest.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_fwtest.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_fwtest.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_fwtest.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_fwtest.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="fwtest.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" QtVersion="4.3.3" RccDir=".\GeneratedFiles" UicDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

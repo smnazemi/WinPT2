@@ -1,0 +1,5 @@
+<area shape="rect" href="$class_ospf_as_external_l_s_a.html" title="OspfAsExternalLSA" alt="" coords="5,80,141,107">
+<area shape="rect" href="$class_ospf_network_l_s_a.html" title="OspfNetworkLSA" alt="" coords="165,80,285,107">
+<area shape="rect" href="$class_ospf_router_l_s_a.html" title="OspfRouterLSA" alt="" coords="309,80,421,107">
+<area shape="rect" href="$class_ospf_summary_l_s_a.html" title="OspfSummaryLSA" alt="" coords="445,80,573,107">
+<area shape="rect" href="$class_ospf_type7_l_s_a.html" title="OspfType7LSA" alt="" coords="597,80,704,107">

@@ -1,0 +1,5 @@
+<area shape="rect" href="$class_routing_entry.html" title="RoutingEntry" alt="" coords="5,81,101,108">
+<area shape="rect" href="$class_eigrp_routing_entry.html" title="EigrpRoutingEntry" alt="" coords="151,5,276,32">
+<area shape="rect" href="$class_ospf_routing_entry.html" title="OspfRoutingEntry" alt="" coords="152,56,275,83">
+<area shape="rect" href="$class_rip_routing_entry.html" title="RipRoutingEntry" alt="" coords="156,107,271,133">
+<area shape="rect" href="$class_static_route.html" title="StaticRoute" alt="" coords="169,157,257,184">

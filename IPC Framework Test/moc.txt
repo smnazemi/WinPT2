@@ -1,0 +1,4 @@
+"$(QTDIR)\bin\moc.exe"  -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QT3SUPPORT_LIB -DQT3_SUPPORT -I".\GeneratedFiles" -I"$(QTDIR)\include" -I".\GeneratedFiles\$(ConfigurationName)" -I"." -I"$(QTDIR)\include\QtCore" -I"$(QTDIR)\include\QtGui" -I"$(QTDIR)\include\QtNetwork" -I"$(QTDIR)\include\Qt3Support" ".\UDPReceiver.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_UDPReceiver.cpp"
+Performing Moc'ing UDPReceiver.h...
+".\GeneratedFiles\$(ConfigurationName)\moc_UDPReceiver.cpp"
+"$(QTDIR)\bin\moc.exe";.\UDPReceiver.h

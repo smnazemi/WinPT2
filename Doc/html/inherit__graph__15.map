@@ -1,0 +1,5 @@
+<area shape="rect" href="$class_device.html" title="Device" alt="" coords="7,31,65,57">
+<area shape="rect" href="$class_cisco_device.html" title="CiscoDevice" alt="" coords="116,5,207,32">
+<area shape="rect" href="$class_cloud.html" title="Cloud" alt="" coords="135,56,188,83">
+<area shape="rect" href="$class_router.html" title="Router" alt="" coords="257,5,316,32">
+<area shape="rect" href="$class_wireless_router.html" title="WirelessRouter" alt="" coords="367,5,476,32">
