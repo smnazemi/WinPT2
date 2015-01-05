@@ -485,17 +485,17 @@ void fwtest::MessageReceived(QString msg)
 }
 void fwtest::on_sendUDP_clicked()
 {
+	int port = ui.udpPort->text().toInt();
+
 	if(m_udpSender == 0)
 	{
-		m_udpSender = new UDPSender();
+		m_udpSender = new UDPSender(port);
 	}
 
 	if(m_udpReceiver == 0)
 	{
-		m_udpReceiver = new UDPReceiver(this);
+		m_udpReceiver = new UDPReceiver(port, this);
 	}
-	//m_udpReceiver->show();
-	//m_udpReceiver->exec();
 }
 
 void fwtest::on_Start_Framework_clicked()

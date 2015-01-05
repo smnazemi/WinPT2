@@ -7,11 +7,12 @@
  {
 
  public:
-     UDPSender();
+     UDPSender(int port);
      void broadcastDatagram(QString msg);
 
  private:
      QUdpSocket *udpSocket;
+	 int m_port;
  };
 
  #endif

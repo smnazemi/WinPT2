@@ -4,13 +4,13 @@
 #include "IUDPReceiverListener.h"
 
 
-UDPReceiver::UDPReceiver(IUDPReceiverListener* listener)
+UDPReceiver::UDPReceiver(int port, IUDPReceiverListener* listener)
      : m_listener(listener),
 	 m_expectedMsgIdx(0)
 
 {
 	udpSocket = new QUdpSocket(this);
-	udpSocket->bind(7777, QUdpSocket::ShareAddress);
+	udpSocket->bind(port, QUdpSocket::ShareAddress);
 	connect(udpSocket, SIGNAL(readyRead()),	this, SLOT(processPendingDatagrams()));
 }
 

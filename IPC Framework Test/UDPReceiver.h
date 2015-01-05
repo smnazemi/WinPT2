@@ -11,7 +11,7 @@
      Q_OBJECT
 
  public:
-     UDPReceiver(IUDPReceiverListener* listener);
+     UDPReceiver(int port, IUDPReceiverListener* listener);
 
  private slots:
      void processPendingDatagrams();
