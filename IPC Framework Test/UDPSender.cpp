@@ -1,4 +1,4 @@
-#include <QtGui>
+
 #include <QtNetwork>
 
 #include "UDPSender.h"

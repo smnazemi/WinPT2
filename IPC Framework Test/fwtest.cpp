@@ -494,8 +494,8 @@ void fwtest::on_sendUDP_clicked()
 	{
 		m_udpReceiver = new UDPReceiver(this);
 	}
-	m_udpReceiver->show();
-	m_udpReceiver->exec();
+	//m_udpReceiver->show();
+	//m_udpReceiver->exec();
 }
 
 void fwtest::on_Start_Framework_clicked()

@@ -1,27 +1,23 @@
 #ifndef RECEIVER_H
 #define RECEIVER_H
 
- #include <QDialog>
+#include <QObject>
 
- class QLabel;
- class QPushButton;
  class QUdpSocket;
  class IUDPReceiverListener;
 
- class UDPReceiver : public QDialog
+ class UDPReceiver : public QObject
  {
      Q_OBJECT
 
  public:
-     UDPReceiver(IUDPReceiverListener* listener, QWidget *parent = 0);
+     UDPReceiver(IUDPReceiverListener* listener);
 
  private slots:
      void processPendingDatagrams();
 
  private:
 	 IUDPReceiverListener* m_listener;
-     QLabel *statusLabel;
-     QPushButton *quitButton;
      QUdpSocket *udpSocket;
 	 QString receivedMessage;
 	 unsigned long m_expectedMsgIdx;
