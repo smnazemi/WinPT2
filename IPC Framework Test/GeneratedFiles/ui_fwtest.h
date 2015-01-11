@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'fwtest.ui'
 **
-** Created: Mon 5. Jan 18:49:45 2015
+** Created: Sun 11. Jan 14:40:49 2015
 **      by: Qt User Interface Compiler version 4.5.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -54,7 +54,7 @@ public:
     QGroupBox *groupBox_2;
     QLabel *label_5;
     QLineEdit *udpPort;
-    QPushButton *sendUDP;
+    QPushButton *startUDP;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *fwtestClass)
@@ -145,7 +145,7 @@ public:
         devCLI->setGeometry(QRect(200, 540, 491, 20));
         label_6 = new QLabel(centralWidget);
         label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(200, 490, 51, 21));
+        label_6->setGeometry(QRect(220, 370, 51, 21));
         label_6->setFont(font);
         groupBox_2 = new QGroupBox(centralWidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
@@ -156,9 +156,9 @@ public:
         udpPort = new QLineEdit(groupBox_2);
         udpPort->setObjectName(QString::fromUtf8("udpPort"));
         udpPort->setGeometry(QRect(50, 30, 51, 20));
-        sendUDP = new QPushButton(groupBox_2);
-        sendUDP->setObjectName(QString::fromUtf8("sendUDP"));
-        sendUDP->setGeometry(QRect(110, 30, 71, 21));
+        startUDP = new QPushButton(groupBox_2);
+        startUDP->setObjectName(QString::fromUtf8("startUDP"));
+        startUDP->setGeometry(QRect(110, 30, 71, 21));
         fwtestClass->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(fwtestClass);
         statusBar->setObjectName(QString::fromUtf8("statusBar"));
@@ -202,7 +202,7 @@ public:
         groupBox_2->setTitle(QApplication::translate("fwtestClass", "Communicate With Mac OS", 0, QApplication::UnicodeUTF8));
         label_5->setText(QApplication::translate("fwtestClass", "Port", 0, QApplication::UnicodeUTF8));
         udpPort->setText(QApplication::translate("fwtestClass", "7777", 0, QApplication::UnicodeUTF8));
-        sendUDP->setText(QApplication::translate("fwtestClass", "Start ...", 0, QApplication::UnicodeUTF8));
+        startUDP->setText(QApplication::translate("fwtestClass", "Start ...", 0, QApplication::UnicodeUTF8));
         Q_UNUSED(fwtestClass);
     } // retranslateUi
 

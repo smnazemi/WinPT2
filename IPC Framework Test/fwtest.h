@@ -54,7 +54,7 @@ private slots:
 
 	void on_Start_Framework_clicked();
 	void on_Un_Subscribe_clicked();
-	void on_sendUDP_clicked();
+	void on_startUDP_clicked();
 	void on_Subscribe_clicked();
 	void on_Delete(QString deviceName);
 	void on_Create(int type, std::string model);

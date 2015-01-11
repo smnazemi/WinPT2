@@ -483,7 +483,7 @@ void fwtest::MessageReceived(QString msg)
 
 	m_udpSender->broadcastDatagram("Received :" + msg);
 }
-void fwtest::on_sendUDP_clicked()
+void fwtest::on_startUDP_clicked()
 {
 	int port = ui.udpPort->text().toInt();
 

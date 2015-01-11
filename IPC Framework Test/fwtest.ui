@@ -360,7 +360,7 @@ border-color: rgb(0, 0, 0);</string>
       <string>7777</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="sendUDP">
+    <widget class="QPushButton" name="startUDP">
      <property name="geometry">
       <rect>
        <x>110</x>
